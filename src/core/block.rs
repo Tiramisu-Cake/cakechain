@@ -36,6 +36,36 @@ pub enum BlockError {
 }
 
 impl Block {
+    pub fn new(
+        parent_hash: BlockHash,
+        height: BlockHeight,
+        txs: Vec<Transaction>,
+        state_root: StateRoot,
+    ) -> Self {
+        Self {
+            parent_hash,
+            height,
+            txs,
+            state_root,
+        }
+    }
+
+    pub fn parent_hash(&self) -> BlockHash {
+        self.parent_hash
+    }
+
+    pub fn height(&self) -> BlockHeight {
+        self.height
+    }
+
+    pub fn txs(&self) -> &[Transaction] {
+        &self.txs
+    }
+
+    pub fn state_root(&self) -> StateRoot {
+        self.state_root
+    }
+
     pub fn hash(&self) -> BlockHash {
         // BLOCKv1 || parent_hash || height || tx_count || tx_0_bytes || tx_1_bytes || ... || state_root
 

@@ -11,6 +11,10 @@ impl Address {
     pub fn as_bytes(&self) -> &[u8; 32] {
         &self.0
     }
+
+    pub fn from_bytes(bytes: &[u8; 32]) -> Address {
+        Address(*bytes)
+    }
 }
 
 pub struct PublicKey([u8; 32]);
