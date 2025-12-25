@@ -104,19 +104,6 @@ This is a protocol, not a product.
 
 ---
 
-## Status
-
-- Core protocol specified (v1)
-- Reference implementation in progress
-- Formal verification work planned
-
-The project is intentionally small and opinionated, serving as:
-- a learning vehicle,
-- a protocol design exercise,
-- and a demonstration of specification-driven engineering.
-
----
-
 ## License
 
 MIT
