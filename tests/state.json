@@ -1,0 +1,15 @@
+{
+  "balances": [
+    {
+      "addr": "0000000000000000000000000000000000000000000000000000000000000001",
+      "amount": 10
+    },
+    {
+      "addr": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "amount": 20
+    }
+  ],
+  "nonces": {
+    "0000000000000000000000000000000000000000000000000000000000000001": 0
+  }
+}

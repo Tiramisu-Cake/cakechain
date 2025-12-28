@@ -1,5 +1,5 @@
 #[derive(Ord, PartialEq, PartialOrd, Eq, Clone, Copy, Hash, Debug)]
-pub struct Address([u8; 32]);
+pub struct Address(pub [u8; 32]);
 
 impl From<PublicKey> for Address {
     fn from(pk: PublicKey) -> Self {
